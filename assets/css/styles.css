@@ -1,7 +1,17 @@
-body{
+body {
     background-color: black;
 }
 
-h1{
+.navbar-scrolled {
+    background-color: #000000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+ul.navbar-nav li.nav-item a.nav-link{
+    color: white;
+}
+
+a.navbar-brand {
     color: white;
 }

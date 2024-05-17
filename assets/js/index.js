@@ -1,9 +1,9 @@
-var navbar = document.getElementById('navbar'); 
+const navEl = document.querySelector('.navbar-scrolled');
 
-navbar.addEventListener('mouseenter', function() {
-    navbar.style.display = 'block';
-});
-
-navbar.addEventListener('mouseleave', function() {
-    navbar.style.display = 'none';
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 56) {
+        navEl.classList.add('navbar-scrolled');
+    } else {
+        navEl.classList.remove('navbar-scrolled');
+    }
 });
